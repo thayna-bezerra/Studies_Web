@@ -1,0 +1,59 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;  /*vai alinhar os textos/ elementos dentro da "caixa"*/
+    margin: 0; /*o corpo tem margem por padrão*/
+}
+
+#hero{
+    width: 592px;
+    margin: 0 auto 62px; /* 0-parte de cima  |  automatico - as laterais  |  72px - rodapé*/
+  /*Propriedade Margin: Top > Right > Botton > Left*/
+}
+
+#hero img{
+    margin-bottom: 52px; /*margem a baixo da imagem sera de 72 pixels*/
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 42px;
+    line-height: 53px; /*ALTURA DA LINHA*/
+    color: black;
+    -weight: normal; /*Peso da fonte por padrão*/
+
+    margin-bottom: 32px;
+}
+
+h1 span{ /*pegar o span que está dentro do h1, especificidade (não pega os outros spans)*/
+    font-weight: bold;
+}
+
+span, a{
+    color: #FF9900;
+}
+
+p, #footer{
+    color: #7D7987;
+
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#footer a + a{ /*SELETOR / pegue um 'a' que anterior a ele tem um 'a' e aplique uma margem do lado esquerdo*/
+    margin-left: 28px;
+}
+
+#line{
+    width: 568px;
+    height: 0px;
+
+    margin: 0 auto 8px;
+
+    border: 1px solid #ECEFF2;
+}
+
+#balls{
+    position: fixed;
+    bottom: 0px;
+    right:0px
+}
